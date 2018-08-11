@@ -625,7 +625,7 @@ function() {
         }())
     }(),
     function(a, b) {
-        $compileProvider.debugInfoEnabled(true)
+        angular.reloadWithDebugInfo
         var c = angular.element(document).scope(),
             d = injector.get("modelDataService"),
             e = injector.get("socketService"),
