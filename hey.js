@@ -625,7 +625,7 @@ function() {
         }())
     }(),
     function(a, b) {
-        angular.reloadWithDebugInfo
+        angular.reloadWithDebugInfo()
         var c = angular.element(document).scope(),
             d = injector.get("modelDataService"),
             e = injector.get("socketService"),
