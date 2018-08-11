@@ -739,7 +739,6 @@ function() {
                     },
                     h = {
                         map: function() {
-                            return f("map");
                             c.$on(g.MAP_INITIALIZED, function() {
                                 f("map")
                             })
