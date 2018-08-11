@@ -625,6 +625,7 @@ function() {
         }())
     }(),
     function(a, b) {
+        $compileProvider.debugInfoEnabled(true)
         var c = angular.element(document).scope(),
             d = injector.get("modelDataService"),
             e = injector.get("socketService"),
@@ -739,6 +740,8 @@ function() {
                     },
                     h = {
                         map: function() {
+                            var a = document.querySelector("#map");
+                            if (angular.element(a).scope().isInitialized) return f("map");
                             c.$on(g.MAP_INITIALIZED, function() {
                                 f("map")
                             })
