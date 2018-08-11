@@ -739,8 +739,7 @@ function() {
                     },
                     h = {
                         map: function() {
-                            var a = document.querySelector("#map");
-                            if (angular.element(a).scope().isInitialized) return f("map");
+                            return f("map");
                             c.$on(g.MAP_INITIALIZED, function() {
                                 f("map")
                             })
